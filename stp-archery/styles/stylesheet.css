@@ -1,0 +1,219 @@
+* {margin: 0;
+    padding: 0;}
+
+body {
+    font-family: "Trebuchet MS", helvetica, sans-serif;
+}  
+
+h1, h2, h3, h4 { 
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+/*-- Title --*/
+.green {
+    background-color: hsla(83, 55%, 52%, 1);
+    padding: 1rem 1rem;
+}
+
+header img {
+    float: right;
+    max-height: 7rem;
+    margin-right: 2rem;
+    vertical-align: middle;
+}
+
+/*-- Nav --*/
+nav ul { width: 100%;
+    background-color: hsla(21, 23%, 26%, 1);
+}
+nav li {
+	display: inline-block;
+    padding: 0rem 1rem;
+    min-width: 10%;
+    border-left: 1px solid hsla(83, 55%, 52%, 1);
+	margin-bottom: 1%;
+}
+nav li:first-of-type {border-left: none; }
+
+nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: .5rem 1rem;
+    text-align: center;
+    color: white;
+}
+
+nav a:hover { background:#eeeedd; color: #000; }
+
+
+/*-- main section --*/
+h3 {
+    background-color: hsla(83, 55%, 52%, 1);
+    color: white;
+    padding: .5rem;
+    max-width: 100%;
+    margin: 0;
+}
+
+h4 {
+    color: white;
+}
+
+p {
+    padding: 1rem;
+    font-size: 80%;
+}
+
+section img {max-width: 100%}
+
+/*-- side nave--*/
+.quick { 
+    background-color: hsla(21, 23%, 26%, 1);
+}
+
+.quick a { 
+    color: hsla(360, 100%, 100%, 1);
+    font-size: 80%;
+    line-height: 150%;
+}
+
+.quick ul {
+    list-style: none;
+    padding: 1rem;
+}
+
+/*-- Footer--*/
+footer {
+    background-color: hsla(21, 23%, 26%, 1);
+    color: white;
+}
+
+/*
+*************************************************
+
+Button
+
+*************************************************
+*/
+
+.button {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 120%;
+    background: #bc0d00; 
+	border-radius:6px;
+}
+
+.button a {
+    color: hsla(360, 100%, 100%, 1);
+    text-decoration: none;
+}
+
+.button:hover {
+	background: #da0f00;
+	color:hsla(360, 100%, 100%, 1); 
+	text-decoration: none;
+}
+.button:active {
+	color: hsla(360, 100%, 100%, 1);
+	top: 1px;
+}
+
+=================================================================
+/*  GRID SYSTEM
+=================================================================
+
+SECTIONS  
+================================================================= */
+
+.section {
+	clear: both;
+	padding: 1rem;
+	margin: 0px;
+}
+
+/*  GROUPING  ================================================================= */
+
+
+.group:before,
+.group:after {
+    content:"";
+    display:table;
+}
+.group:after {
+    clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+/*  GRID COLUMN SETUP   =================================================================*/
+
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 .5% 1%;
+}
+
+.col:first-child { margin-left: 0; } /* all browsers except IE6 and lower */
+
+
+/*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col { 
+		margin: 1% 0 .5% 0%;
+	}
+}
+
+/*  GRID OF SIX   =================================================================*/
+
+
+.span_6_of_6 {
+	width: 100%;
+}
+
+.span_5_of_6 {
+  	width: 83.06%;
+}
+
+.span_4_of_6 {
+  	width: 66.13%;
+}
+
+.span_3_of_6 {
+  	width: 49.2%;
+}
+
+.span_2_of_6 {
+  	width: 32.26%;
+}
+
+.span_1_of_6 {
+  	width: 15.33%;
+}
+
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.span_6_of_6 {
+		width: 100%; 
+	}
+	.span_5_of_6 {
+		width: 100%; 
+	}
+	.span_4_of_6 {
+		width: 100%; 
+	}
+	.span_3_of_6 {
+		width: 100%; 
+	}
+	.span_2_of_6 {
+		width: 100%; 
+	}
+	.span_1_of_6 {
+		width: 100%; 
+	}
+}
