@@ -10,15 +10,18 @@ h1, h2, h3, h4 {
     text-transform: uppercase;
 }
 
+h2 {padding: .5rem;
+}
+
 h4 {
-    color: white;
+    color: hsla(360, 100%, 100%, 1);
 }
 
 
 /*-- Title --*/
 .green {
     background-color: hsla(83, 55%, 52%, 1);
-    padding: 1rem 1rem;
+    padding: 1%;
 }
 
 header img {
@@ -30,7 +33,7 @@ header img {
 
 
 /*-- Nav --*/
-nav ul { width: 100%;
+nav ul { 
     background-color: hsla(21, 23%, 26%, 1);
 }
 nav li {
@@ -47,7 +50,7 @@ nav a {
     text-decoration: none;
     padding: .5rem 1rem;
     text-align: center;
-    color: white;
+    color: hsla(360, 100%, 100%, 1);
 }
 
 nav a:hover { background:#eeeedd; color: #000; }
@@ -59,15 +62,18 @@ p {
     font-size: 80%;
 }
 
+
+/*-- Instructor section --*/
+#instruct {padding: .5rem;}
+
 section img {max-width: 100%}
 
 
 /*-- side nave--*/
 h3 {
     background-color: hsla(83, 55%, 52%, 1);
-    color: white;
+    color: hsla(360, 100%, 100%, 1);
     padding: .5rem;
-    max-width: 100%;
 }
 
 .quick { 
@@ -88,7 +94,7 @@ h3 {
 /*-- Footer--*/
 footer {
     background-color: hsla(21, 23%, 26%, 1);
-    color: white;
+    color: hsla(360, 100%, 100%, 1);
 }
 
 /*
@@ -104,7 +110,7 @@ Button
     text-transform: uppercase;
     font-size: 120%;
     background: #bc0d00; 
-	border-radius:6px;
+	border-radius: 6px;
 }
 
 .button a {
@@ -114,7 +120,7 @@ Button
 
 .button:hover {
 	background: #da0f00;
-	color:hsla(360, 100%, 100%, 1); 
+	color: hsla(360, 100%, 100%, 1); 
 	text-decoration: none;
 }
 .button:active {
@@ -131,8 +137,6 @@ SECTIONS
 
 .section {
 	clear: both;
-	padding: 1rem;
-	margin: 0px;
 }
 
 /*  GROUPING  ================================================================= */
