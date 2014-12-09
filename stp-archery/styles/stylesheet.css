@@ -1,5 +1,5 @@
-* {margin: 0;
-    padding: 0;}
+* {margin: 0; padding: 0;}
+div {box-sizing: border-box;}
 
 body {
     font-family: "Trebuchet MS", helvetica, sans-serif;
@@ -9,6 +9,11 @@ h1, h2, h3, h4 {
     font-weight: normal;
     text-transform: uppercase;
 }
+
+h4 {
+    color: white;
+}
+
 
 /*-- Title --*/
 .green {
@@ -23,16 +28,17 @@ header img {
     vertical-align: middle;
 }
 
+
 /*-- Nav --*/
 nav ul { width: 100%;
     background-color: hsla(21, 23%, 26%, 1);
 }
 nav li {
-	display: inline-block;
-    padding: 0rem 1rem;
+    display: inline-block;
+    padding: .5rem 1rem;
     min-width: 10%;
+    text-align: center;
     border-left: 1px solid hsla(83, 55%, 52%, 1);
-	margin-bottom: 1%;
 }
 nav li:first-of-type {border-left: none; }
 
@@ -48,18 +54,6 @@ nav a:hover { background:#eeeedd; color: #000; }
 
 
 /*-- main section --*/
-h3 {
-    background-color: hsla(83, 55%, 52%, 1);
-    color: white;
-    padding: .5rem;
-    max-width: 100%;
-    margin: 0;
-}
-
-h4 {
-    color: white;
-}
-
 p {
     padding: 1rem;
     font-size: 80%;
@@ -67,7 +61,15 @@ p {
 
 section img {max-width: 100%}
 
+
 /*-- side nave--*/
+h3 {
+    background-color: hsla(83, 55%, 52%, 1);
+    color: white;
+    padding: .5rem;
+    max-width: 100%;
+}
+
 .quick { 
     background-color: hsla(21, 23%, 26%, 1);
 }
@@ -153,19 +155,9 @@ SECTIONS
 .col {
 	display: block;
 	float:left;
-	margin: 1% 0 .5% 1%;
+	margin: 0;
 }
 
-.col:first-child { margin-left: 0; } /* all browsers except IE6 and lower */
-
-
-/*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
-
-@media only screen and (max-width: 480px) {
-	.col { 
-		margin: 1% 0 .5% 0%;
-	}
-}
 
 /*  GRID OF SIX   =================================================================*/
 
