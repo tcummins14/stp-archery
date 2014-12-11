@@ -78,7 +78,9 @@ h3 {
 
 .quick { 
     background-color: hsla(21, 23%, 26%, 1);
+  
 }
+
 
 .quick a { 
     color: hsla(360, 100%, 100%, 1);
@@ -89,6 +91,10 @@ h3 {
 .quick ul {
     list-style: none;
     padding: 1rem;
+}
+
+.quick li {
+    padding: 1%;
 }
 
 /*-- Footer--*/
@@ -111,6 +117,8 @@ Button
     font-size: 120%;
     background: #bc0d00; 
 	border-radius: 6px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 .button a {
@@ -159,7 +167,7 @@ SECTIONS
 .col {
 	display: block;
 	float:left;
-	margin: 0;
+	/*margin: 0;*/
 }
 
 
